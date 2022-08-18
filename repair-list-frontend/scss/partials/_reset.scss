@@ -1,0 +1,13 @@
+/* Reset -------------------------------------------------- */
+html { margin: 0; padding: 0; border: 0;} body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,code,del,dfn,em,img,q,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,
+caption,article,aside,dialog,figure,footer,header,hgroup,nav,section,input { margin: 0; padding: 0; border: 0; }
+article,aside,dialog,figure,footer,header,hgroup,nav,section { display: block; }
+blockquote:before,blockquote:after,q:before,q:after { content: ''; }
+blockquote, q { quotes: "" ""; }
+a img { border: none; }
+:focus { outline: 0; }
+a:focus { outline: none; }
+a{ text-decoration: none; }
+img { max-width: 100%; height: auto; }
+ul,ul li,ul ol,ul li ul,ul li ul li { list-style: none; padding: 0; margin: 0; }
+* {  -webkit-box-sizing: border-box;  box-sizing: border-box; }

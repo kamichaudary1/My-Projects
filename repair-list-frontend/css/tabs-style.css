@@ -1,0 +1,113 @@
+.nav-tabs {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav-tabs {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .nav-tabs {
+    border-bottom: none;
+    display: flex;
+  }
+  .nav-tabs .nav-item + .nav-item {
+    margin: 0;
+  }
+  .nav-tabs .nav-link {
+    transition: border-color 0.125s ease-in;
+    border-color:rgba( 222, 0, 0, 0.03 );
+    color:#707070;
+    font-size:16px;
+    text-align:center;
+    border-radius:0;
+    padding:35px 0;
+  }
+  .nav-tabs .nav-link span {
+    display: inline-block;
+    width:100%;
+    text-align:center;
+    font-size:16px;
+    color:#DE0000;
+  }
+  .nav-tabs .nav-link:hover {
+    border-color:rgba( 222, 0, 0, 1 );
+    border-top-left-radius: 12px;
+  }
+  .nav-tabs .nav-link.active {
+    border-color:rgba( 222, 0, 0, 1 );
+    border-bottom-left-radius: 0.25rem;
+    border-top-right-radius: 0;
+    margin-right: -1px;
+    border-top-left-radius: 12px;
+  }
+  .nav-tabs .nav-link.active:hover {
+    border-color:rgba( 222, 0, 0, 1 );
+    border-top-left-radius: 12px;
+  }
+  .card {
+    border: none;
+  }
+  .card .card-header {
+    display: none;
+  }
+  .card .collapse {
+    display: block;
+  }
+
+}
+
+@media ( min-width:768px ) {
+    .visit-us.state-your-device .tab-content {
+        width:calc( 100% - 210px );
+    }
+    .visitus-detail-row .tab-content {
+        width:60%;
+        border-color:rgba( 222, 0, 0, 0.03 );
+        border-width:1px;
+        border-style:solid;
+    }
+
+}
+
+@media ( min-width:1200px ) {
+    .visitus-detail-row .tab-content {
+        width:65%;
+    }
+    .visit-us.state-your-device .nav-tabs {
+        width:355px;
+    }
+    .visit-us.state-your-device .tab-content {
+        width:calc( 100% - 355px );
+    }
+    .visitus-detail-row .card-body {
+        padding:15px 20px 10px 20px;
+    }
+
+}
+
+@media ( min-width:1366px ) {
+    .visitus-detail-row .tab-content {
+        width:300px;
+    }
+
+}
+
+@media ( min-width:1700px ) {
+    .visitus-detail-row .tab-content {
+        width:750px;
+    }
+
+}
+
+@media (max-width: 767px) {
+  .tab-pane {
+    display: block !important;
+    opacity: 1 !important;
+  }
+  .card-header a {
+    color:#DE0000;
+    font-weight:700;
+  }
+
+}

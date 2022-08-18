@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Outfit-ExtraBold.woff') format('woff');
+    font-weight: bolder;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,173 @@
+.title-row {
+  padding: 0 0 20px 0;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .title-row {
+    margin: 65px 0 0px 0;
+  }
+}
+@media (min-width: 1366px) {
+  .title-row {
+    margin: 65px 0 50px 0;
+  }
+}
+.title-row h2 {
+  color: #606060;
+  font-size: 30px;
+  line-height: 0.9;
+  font-weight: 700;
+  position: relative;
+  text-transform: capitalize;
+  width: auto;
+  padding-left: 0;
+  display: inline-block;
+}
+.title-row h2 span {
+  color: #DE0000;
+}
+.title-row h2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -25px;
+  right: auto;
+  left: 0;
+  margin: 0 auto;
+  width: 177px;
+  height: 5px;
+  background-color: #DE0000;
+}
+
+.our-stores-outer {
+  margin-bottom: 150px;
+  margin-top: 300px;
+}
+@media (min-width: 1366px) {
+  .our-stores-outer {
+    margin-bottom: 227px;
+  }
+}
+@media (min-width: 1650px) {
+  .our-stores-outer .our-stores-inner {
+    padding: 0;
+  }
+}
+.our-stores-outer .our-stores-inner .title-row {
+  text-align: center;
+}
+.our-stores-outer .our-stores-inner .our-stores-location-sec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.our-stores-outer .our-stores-inner .our-stores-location-sec .our-store-location {
+  width: 100%;
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid;
+  border-color: rgba(222, 0, 0, 0.03);
+  margin-top: 108px;
+  box-sizing: border-box;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+}
+@media (min-width: 768px) {
+  .our-stores-outer .our-stores-inner .our-stores-location-sec .our-store-location {
+    max-width: 48%;
+  }
+}
+@media (min-width: 1200px) {
+  .our-stores-outer .our-stores-inner .our-stores-location-sec .our-store-location {
+    max-width: 31.33%;
+  }
+}
+@media (min-width: 1650px) {
+  .our-stores-outer .our-stores-inner .our-stores-location-sec .our-store-location {
+    max-width: 480px;
+  }
+}
+@media (min-width: 1200px) {
+  .our-stores-outer .our-stores-inner .our-stores-location-sec .our-store-location .our-store-img {
+    min-height: 370px;
+  }
+}
+@media (min-width: 1650px) {
+  .our-stores-outer .our-stores-inner .our-stores-location-sec .our-store-location .our-store-img {
+    min-height: 510px;
+  }
+}
+.our-stores-outer .our-stores-inner .our-stores-location-sec .our-store-location .our-store-img img {
+  width: 100%;
+}
+.our-stores-outer .our-stores-inner .our-stores-location-sec .our-store-location .our-store-desp {
+  padding: 53px 20px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .our-stores-outer .our-stores-inner .our-stores-location-sec .our-store-location .our-store-desp {
+    padding: 53px 38px;
+  }
+}
+.our-stores-outer .our-stores-inner .our-stores-location-sec .our-store-location .our-store-desp h2 {
+  font-size: 30px;
+  color: #DE0000;
+  font-weight: 900;
+  padding-bottom: 10px;
+}
+@media (min-width: 1366px) {
+  .our-stores-outer .our-stores-inner .our-stores-location-sec .our-store-location .our-store-desp h2 {
+    font-size: 35px;
+  }
+}
+.our-stores-outer .our-stores-inner .our-stores-location-sec .our-store-location .our-store-desp p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #606060;
+  padding-bottom: 30px;
+  line-height: 1.2;
+}
+@media (min-width: 1366px) {
+  .our-stores-outer .our-stores-inner .our-stores-location-sec .our-store-location .our-store-desp p {
+    font-size: 23px;
+  }
+}
+.our-stores-outer .our-stores-inner .our-stores-location-sec .our-store-location .our-store-desp .mob_contact {
+  font-size: 20px;
+  font-weight: 300;
+  color: #DE0000;
+  font-weight: 500;
+  display: block;
+}
+@media (min-width: 768px) {
+  .our-stores-outer .our-stores-inner .our-stores-location-sec .our-store-location .our-store-desp .mob_contact {
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 1366px) {
+  .our-stores-outer .our-stores-inner .our-stores-location-sec .our-store-location .our-store-desp .mob_contact {
+    padding-bottom: 48px;
+  }
+}
+.our-stores-outer .our-stores-inner .our-stores-location-sec .our-store-location .our-store-desp .visit_store {
+  display: inline-block;
+  padding: 16px 13px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+  background: #DE0000;
+  border-radius: 50px;
+}
+.our-stores-outer .our-stores-inner .our-stores-location-sec .our-store-location:hover {
+  border-color: #de0000;
+  -webkit-box-shadow: 0px 7px 11px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 7px 11px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 7px 11px 0px rgba(0, 0, 0, 0.15);
+}
+
+/*# sourceMappingURL=location.css.map */

@@ -1,0 +1,16 @@
+
+@font-face {
+  font-family: 'Baskerville';
+  src: url('Baskerville.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Baskerville';
+  src:  url(data:application/x-font-woff;charset=utf-8;base64,) format('woff'), url('Baskerville.ttf')  format('truetype'), url('Baskerville.svg#Baskerville') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+

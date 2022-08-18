@@ -1,0 +1,30 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.btn-quote {
+    display: inline-block;
+    line-height: 32px;
+    padding: 8px 15px;
+    border-radius: 28px;
+    border: 2px solid #DE0000;
+    text-align: center;
+    color: #DE0000;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 500;
+    transition: 0.3s all ease;
+}
+.btn-quote:hover {
+    background: #DE0000;
+    color: #fff;
+    box-shadow: 0 0 8px rgba(222, 0, 0, 0.5);
+}
+.btn-quote2 {
+    width:160px;
+    height:40px;
+    line-height: 40px;
+    font-size:20px;
+    color:#fff;
+    padding:0;
+    background-color:$secondary-color;
+}

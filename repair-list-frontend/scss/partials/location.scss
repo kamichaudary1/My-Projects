@@ -1,0 +1,114 @@
+@import "variables.scss";
+@import "mixins.scss";
+.title-row {
+    padding:0 0 20px 0;
+    text-align: center;
+    @media ( min-width: $breakpoint-laptop) {margin:65px 0 0px 0;}
+    @media ( min-width: $breakpoint-largescreen) {margin:65px 0 50px 0;}
+    h2 {
+        color:$nav-color;
+        font-size:$defaultFontsize + 13px;
+        line-height: .9;
+        font-weight:700;
+        position:relative;
+        text-transform:capitalize;
+        width:auto;
+        padding-left: 0;
+        display: inline-block;
+        span {
+            color:$secondary-color;
+        }
+        &:after {
+            content:'';
+            @include positionabsolute;
+            bottom:-25px;
+            right:auto;
+            left:0;
+            margin:0 auto;
+            width:177px;
+            height:5px;
+            background-color:$secondary-color;
+        }
+    }
+}
+.our-stores-outer{
+    margin-bottom: 150px;
+    margin-top: 300px;
+    @media ( min-width: $breakpoint-largescreen) {margin-bottom: 227px;}
+    .our-stores-inner{
+        
+        // @media ( min-width: $breakpoint-extralarge ) {padding:0 ;}
+        @media ( min-width: $breakpoint-extralarge ) {padding:0;}
+        .title-row{
+            text-align: center;
+        }
+         .our-stores-location-sec{
+            @include flexclass;
+            .our-store-location{
+                width: 100%;
+                border-radius: 40px;
+                background-color:rgba( 255, 255,255, 0.30 );
+                border:1px solid;
+                border-color:rgba( 222, 0, 0, 0.03 );
+                margin-top: 108px;
+                box-sizing: border-box;
+                @include transitiondefault;
+                @media ( min-width: $breakpoint-tablet) {max-width: 48%;}
+                @media ( min-width: $breakpoint-laptop) {max-width: 31.33%;}
+                @media ( min-width: $breakpoint-extralarge) {max-width:480px;}
+                .our-store-img{
+                    @media ( min-width: $breakpoint-laptop) {min-height: 370px;}
+                    @media ( min-width: $breakpoint-extralarge) {min-height: 510px;}
+                    img{
+                        width: 100%;
+                    }
+                }
+                .our-store-desp{
+                    padding: 53px 20px;
+                    text-align: center;
+                    @media ( min-width: $breakpoint-laptop) {padding: 53px 38px;}
+                    h2{ 
+                        font-size: $defaultFontsize + 13px;
+                        color: $secondary-color;
+                        font-weight: 900;
+                        padding-bottom: 10px;
+                        @media ( min-width: $breakpoint-largescreen) {font-size: $defaultFontsize + 18px;}
+                    }
+                    p{
+                        font-size: $defaultFontsize + 3px;
+                        font-weight: 300;
+                        color:$nav-color;
+                        padding-bottom:30px;
+                        line-height: 1.2;
+                        @media ( min-width: $breakpoint-largescreen) {font-size: $defaultFontsize + 6px;}
+                    }
+                    .mob_contact{
+                        font-size: $defaultFontsize + 3px;
+                        font-weight: 300;
+                        color: $secondary-color;
+                        font-weight: 500;
+                        display: block;
+                        @media ( min-width: $breakpoint-tablet) {padding-bottom: 30px;}
+                        @media ( min-width: $breakpoint-largescreen) {padding-bottom: 48px;}
+                    }
+                    .visit_store{
+                        display: inline-block;
+                        padding: 16px 13px;
+                        font-size:$defaultFontsize - 1px ;
+                        color: white;
+                        font-weight: bold;
+                        text-transform: capitalize;
+                        background:$secondary-color;
+                        border-radius: 50px;
+                    }
+                }
+                &:hover {
+                    border-color:rgba( 222, 0, 0, 1 );
+                    -webkit-box-shadow: 0px 7px 11px 0px rgba(0, 0, 0, 0.15);
+                    -moz-box-shadow: 0px 7px 11px 0px rgba(0, 0, 0, 0.15);
+                    box-shadow: 0px 7px 11px 0px rgba(0, 0, 0, 0.15);
+                }
+            }
+         }
+    }
+}

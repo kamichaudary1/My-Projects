@@ -1,0 +1,127 @@
+.footer {
+	background: rgb(57,57,57);
+    background: linear-gradient(90deg, rgba(57,57,57,1) 0%, 
+            	rgba(47,47,47,1) 47%, rgba(35,35,35,1) 100%);
+	padding:95px 0 25px 0;
+	.container {
+		margin:0 auto;
+		@media ( min-width: $breakpoint-mobile ){ padding:0 30px; }
+		@media ( min-width: $breakpoint-tablet ){ padding:0 30px; }
+		@media ( min-width: $breakpoint-largelaptop ){ padding:0; width: 1200px; }
+		@media ( min-width: $breakpoint-large ){ width:1375px; }
+		.footer-top-row {
+            @include flexclass;
+            padding-bottom:105px;
+            border-bottom:1px solid $primary-bgcolor;
+            .footer-logo-col {
+            	@media ( min-width: $breakpoint-mobile ){ width:100%; }
+            	@media ( min-width: $breakpoint-tablet ){ width:100%; }
+            	@media ( min-width: $breakpoint-laptop ){ width:285px; }            	
+            	display:flex;
+            	flex-wrap:wrap;
+            	.footer-address {
+            		margin:40px 0 70px 0;
+            		width:100%;
+            		span {
+            			color:#fff;
+            			font-size:$defaultFontsize + 1;
+            			line-height:1;
+            		}
+            		p {
+            			color:#fff;
+            			font-size:$defaultFontsize - 1;
+            			line-height:28px;            			
+            		}
+            	}
+            	.social-media-list {
+            		display:flex;
+            		flex-wrap:wrap;
+            		justify-content:space-between;
+            		width: 285px;
+            		li {
+            			display:flex;
+            			align-items:center;
+            			justify-content:center;
+            			a {
+            				display:flex;
+            				justify-content:center;
+            				align-items:center;
+            				width:70px;
+            				height:70px;
+            				background-color:$nav-color;
+            				transition:all ease 1s;
+							-webkit-transition:all ease 1s;
+							-moz-transition:all ease 1s;
+							-ms-transition:all ease 1s;
+            				border-radius:50%;
+            				i {
+            					color:#000;
+            					font-size:$defaultFontsize + 21px;
+            				}
+            				&:hover {
+            					background-color:$secondary-color;
+            					i {
+            						color:$primary-bgcolor;
+            					}
+            				}
+            			}
+            		}
+            	}
+            }
+            .footer-right-col {
+            	@media ( min-width: $breakpoint-mobile ){ width:100%; }
+            	@media ( min-width: $breakpoint-tablet ){ width:100%; }
+            	@media ( min-width: $breakpoint-laptop ){ width:865px; }     
+            	@include flexclass;      
+            	margin-top:75px;      	
+            	.footer-links {
+            		display:inline-block;            		
+            		@media ( min-width: $breakpoint-mobile ){ width:100%; }
+	            	@media ( min-width: $breakpoint-tablet ){ width:205px; }
+            		h2 {
+            			color:$primary-bgcolor;
+						font-size:$defaultFontsize + 3px;
+						line-height:1;
+						margin-bottom:20px;
+            		}
+            		ul {
+            			width:100%;
+            			margin:0;
+            			padding:0;
+        				li {
+        					display:list-item;
+        					float:left;
+        					width:100%;
+        					list-style-type:disc;
+        					list-style-position:inside;
+        					color:$primary-bgcolor;
+        					font-size:16px;
+        					line-height:1;
+        					margin-bottom:10px;
+        					a {
+        						display:inline-block;
+        						color:$primary-bgcolor;
+        						font-size:$defaultFontsize - 1px;
+        						line-height:1;
+        					}
+        				}
+        			}
+            	}
+            }
+		}
+		.footer-bottom-row {
+			@include flexclass;
+			justify-content:center;
+			margin-top:35px;
+			p {
+				text-align:center;
+				color:#fdfdfd;
+				font-size:$defaultFontsize;
+				line-height:1.1;
+				span {
+					color:$secondary-color;
+				}
+			}
+		}
+	}
+}

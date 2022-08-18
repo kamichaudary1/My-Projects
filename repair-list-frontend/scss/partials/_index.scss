@@ -1,0 +1,149 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a,
+abbr,
+acronym,
+address,
+article,
+aside,
+blockquote,
+body,
+caption,
+code,
+dd,
+del,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+fieldset,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+iframe,
+img,
+input,
+label,
+legend,
+li,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+section,
+span,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+    display: block;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: '';
+}
+
+blockquote,
+q {
+    quotes: "" "";
+}
+
+a img {
+    border: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+a:focus {
+    outline: none;
+}
+/* Global -------------------------------------------------- */
+
+body {
+    color: #000;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: 'Montserrat', sans-serif;
+    background: #f0f0f0;
+}
+/* Global Css for headings, p and achors */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+p {}
+
+a {
+    text-decoration: none!important;
+}
+
+button {}
+
+ul,
+ul li,
+ul li ul,
+ul li ul li,
+ul ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}

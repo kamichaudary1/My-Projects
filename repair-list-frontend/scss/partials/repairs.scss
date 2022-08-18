@@ -1,0 +1,446 @@
+/* banner starts here -------------- */
+@import "variables.scss";
+@import "mixins.scss";
+.repair-banner {
+    background: rgb(57,57,57);
+    background: linear-gradient(90deg, rgba(57,57,57,1) 0%, 
+                rgba(47,47,47,1) 47%, rgba(35,35,35,1) 100%);
+    padding:55px 0 80px 0;
+    margin-top:168px;
+    @media (max-width: $breakpoint-mobile) { margin-top:100px; }
+    .inner {
+        h1 {
+            color:$primary-bgcolor;
+            font-size: $defaultFontsize + 13px;
+            line-height: .9;
+            font-weight:700;
+            text-align:center;
+            position:relative;
+            margin-bottom:60px;
+            text-transform:capitalize;
+            &:after {
+                content:'';
+                @include positionabsolute;
+                bottom:-25px;
+                margin:0 auto;
+                width:140px;
+                height:5px;
+                background-color:$secondary-color;
+            }
+        }
+        p {
+            color:$primary-bgcolor;
+            font-size:$defaultFontsize;
+            line-height:28px;
+            font-weight:300;
+        }
+    }
+}
+
+/* banner ends here ---------------- */
+
+/* select device starts here --------- */
+.select-device {
+    padding:130px 0 135px 0;
+    background-color:$primary-bgcolor;
+    .inner {
+        margin:0 auto;
+        @media (max-width: $breakpoint-mobile) { width:100%; padding:0 30px; }
+        @media (min-width: $breakpoint-tablet) { width:100%; padding:0 30px; }
+        @media (min-width: $breakpoint-laptop) { width:1170px; }
+        @media (min-width: $breakpoint-large) { width:1370px; }
+        .title-row {
+            h2 {
+                color:$nav-color;
+                font-size:$defaultFontsize + 13px;
+                line-height: .9;
+                font-weight:900;
+                text-align:center;
+                position:relative;
+                margin-bottom:110px;
+                text-transform:capitalize;
+                span {
+                    color:$secondary-color;
+                }
+                &:after {
+                    content:'';
+                    @include positionabsolute;
+                    bottom:-25px;
+                    margin:0 auto;
+                    width:140px;
+                    height:5px;
+                    background-color:$secondary-color;
+                }
+            }
+        }
+        .detail-row {
+            @include flexclass;
+            .box {
+                @include flexclass;                
+                justify-content: center;
+                background-color:rgba( 255, 255,255, 0.30 );
+                border:1px solid;
+                border-color:rgba( 222, 0, 0, 0.03 );
+                padding:30px;
+                margin-bottom:100px;
+                border-radius:40px;
+                @include transitiondefault;
+                @media ( max-width: $breakpoint-mobile ) { width:100%; }
+                @media ( min-width: $breakpoint-tablet ) { width:48%; }
+                @media ( min-width: $breakpoint-laptop ) { width:24%; }
+                @media ( min-width: $breakpoint-large ) { width:21%; }
+                img {
+
+                }
+                h3 {
+                    @include sectiontitles;                    
+                    font-size:$defaultFontsize - 2px;
+                    line-height: .9;
+                    font-weight:600;
+                    text-align:center;
+                    width:100%;
+                    margin:15px 0 25px 0;
+                    span {
+                        color:$secondary-color;
+                    }
+                }
+                &:hover {
+                    border-color:rgba( 222, 0, 0, 1 );
+                    -webkit-box-shadow: 0px 7px 11px 0px rgba(0, 0, 0, 0.15);
+                    -moz-box-shadow: 0px 7px 11px 0px rgba(0, 0, 0, 0.15);
+                    box-shadow: 0px 7px 11px 0px rgba(0, 0, 0, 0.15);
+                }
+            }
+        } 
+    }
+}
+/* select device ends here ----------- */
+
+/* select repair starts here --------- */
+.select-repair {
+    background-color:$primary-bgcolor;
+    .inner {
+        margin:0 auto;
+        @media (max-width: $breakpoint-mobile) { width:100%; padding:0 30px; }
+        @media (min-width: $breakpoint-tablet) { width:100%; padding:0 30px; }
+        @media (min-width: $breakpoint-laptop) { width:1170px; }
+        @media (min-width: $breakpoint-large) { width:1370px; }
+        h2 {
+            font-size:$defaultFontsize + 13px;
+            line-height: .9;
+            font-weight:900;
+            text-align:center;
+            position:relative;
+            margin-bottom:60px;
+            text-transform:capitalize;
+            color:$nav-color;
+            span {
+                color:$secondary-color;
+            }
+            &:after {
+                content:'';
+                @include positionabsolute;
+                bottom:-25px;
+                margin:0 auto;
+                width:140px;
+                height:5px;
+                background-color:$secondary-color;
+            }
+        }
+        p {
+            color:$primary-bgcolor;
+            font-size:$defaultFontsize;
+            line-height:28px;
+            font-weight:300;
+        }
+        .detail-row {
+            @include flexclass;
+            .box {
+                @include flexclass;
+                justify-content: center;
+                background-color:rgba( 255, 255,255, 0.30 );
+                border:1px solid;
+                border-color:rgba( 222, 0, 0, 0.03 );
+                padding:65px 20px;
+                margin-bottom:100px;
+                border-radius:40px;
+                &:last-child {
+                    @media (min-width: $breakpoint-laptop) { margin-right:auto; }
+                }                
+                &:nth-child(9) {
+                    @media (min-width: $breakpoint-laptop) { margin-left:auto; margin-right:70px; }
+                }
+                @include transitiondefault;
+                @media ( max-width: $breakpoint-mobile ) { width:100%; }
+                @media ( min-width: $breakpoint-tablet ) { width:48%; }
+                @media ( min-width: $breakpoint-laptop ) { width:22%; }
+                @media ( min-width: $breakpoint-largelaptop ) { width:21%; }
+                img {
+
+                }
+                h3 {
+                    @include sectiontitles;                    
+                    font-size:$defaultFontsize - 1px;
+                    line-height: .9;
+                    font-weight:300;
+                    text-align:center;
+                    width:100%;
+                    margin:25px 0 10px 0;
+                    span {
+                        color:$secondary-color;
+                    }
+                }
+                .price-call {
+                    display:inline-block;
+                    width:100%;
+                    text-align:center;
+                    color:$secondary-color;
+                    font-size:$defaultFontsize - 1px;
+                    font-weight:400;
+                }
+                &:hover {
+                    border-color:rgba( 222, 0, 0, 1 );
+                    -webkit-box-shadow: 0px 7px 11px 0px rgba(0, 0, 0, 0.15);
+                    -moz-box-shadow: 0px 7px 11px 0px rgba(0, 0, 0, 0.15);
+                    box-shadow: 0px 7px 11px 0px rgba(0, 0, 0, 0.15);
+                }
+            }
+        } 
+    }
+}
+
+/* select repair ends here ----------- */
+
+/* visit us starts here -------------- */
+.visit-us {
+    background-color:$primary-bgcolor;
+    padding:0 0 130px 0;    
+    .inner {
+        margin:0 auto;
+        @media (max-width: $breakpoint-mobile) { width:100%; padding:0 30px; }
+        @media (min-width: $breakpoint-tablet) { width:100%; padding:0 30px; }
+        @media (min-width: $breakpoint-laptop) { width:1170px; }
+        @media (min-width: $breakpoint-largewide) { width:1650px; }
+        h2 {
+            font-size:$defaultFontsize + 13px;
+            color:$nav-color;
+            line-height: .9;
+            font-weight:900;
+            text-align:center;
+            position:relative;
+            margin-bottom:100px;
+            text-transform:capitalize;
+            span {
+                color:$secondary-color;
+            }
+            &:after {
+                content:'';
+                @include positionabsolute;
+                bottom:-25px;
+                margin:0 auto;
+                width:140px;
+                height:5px;
+                background-color:$secondary-color;
+            }
+        }
+        .visitus-detail-row {
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:space-between;
+            .left-col {
+                display:flex;
+                @media (max-width: $breakpoint-mobile) { width:100%; }
+                @media (min-width: $breakpoint-tablet) { width:100%; }
+                @media (min-width: $breakpoint-largescreen ) { width:45%; }
+                @media (min-width: $breakpoint-extralarge) { width:545px; }
+                iframe {
+                    width:100%;
+                    height:680px;
+                }
+            }
+            .right-col {
+                @media (max-width: $breakpoint-mobile) { width:100%; margin-top:80px; }
+                @media (min-width: $breakpoint-tablet) { width:100%; margin-top:80px; }
+                @media (min-width: $breakpoint-largescreen) { width:50%; margin:0; }
+                @media (min-width: $breakpoint-largewide) { width:1005px; }
+                display:flex;
+                flex-wrap:wrap;
+                height:100%;
+                .tabs-outer {
+                    display:flex;
+                    flex-wrap:wrap;
+                    width:100%;
+                    .tab-content {
+                        @media (max-width: $breakpoint-mobile) { width:100%; }
+                    }
+                    .tabs-detail-row {
+                        border:1px;
+                        border-color:rgba( 222, 0, 0, 1 );                    
+                        .tabs-top {
+                            display:flex;
+                            justify-content:space-between;
+                            flex-wrap:wrap;   
+                            .tabs-detail-left {
+                                display:flex;
+                                flex-wrap:wrap;
+                                width:400px;
+                                .repair-text-outer {
+                                    margin-bottom:10px;
+                                    width:100%;
+                                    .repair-text {
+
+                                    }
+                                    .repair-desc {
+                                        color:$secondary-color;
+                                        font-size:$defaultFontsize + 1;
+                                        line-height:.9;
+                                    }
+                                }                            
+                            }          
+                            .tabs-detail-right {
+                                ul {
+                                    li {
+                                        a {
+                                            .text1 {
+                                                color:$primary-color;
+                                                font-size:$defaultFontsize - 5px;
+                                                line-height:.9;
+                                                font-weight:300;
+                                            }
+                                            .text2 {
+                                                color:$secondary-color;
+                                                font-size:$defaultFontsize - 5px;
+                                                line-height:.9;
+                                                font-weight:300;
+                                                text-transform:capitalize;
+                                            }
+                                        }
+                                    }
+                                }
+                            }       
+                        }
+                        .tabs-bottom {
+                            margin-top:15px;
+                            h3 {
+                                color:$primary-color;
+                                font-size:$defaultFontsize + 1px; 
+                                line-height:.9;
+                                margin-bottom:5px;
+                            }
+                            p {
+                                color:$primary-color;
+                                font-size:$defaultFontsize + 1px; 
+                                line-height:22px;
+                                margin-bottom:15px;
+                            }
+                            span {
+                                display:inline-block;
+                                color:$secondary-color;
+                                font-size:$defaultFontsize - 5px;
+                                line-height:.9;
+                            }
+                        }                    
+                    }
+                }
+                .tabs-form {
+                    display:flex;
+                    flex-wrap:wrap;
+                    width:100%;
+                    padding:28px 30px 5px 30px;
+                    h3 {
+                        color:$secondary-color;
+                        font-size:$defaultFontsize + 1px;
+                        line-height:1;                  
+                        margin-bottom:25px;     
+                        text-transform:uppercase; 
+                        width:100%;    
+                    }
+                    form {
+                        display:flex;
+                        justify-content:space-between;
+                        flex-wrap:wrap;
+                        width:100%;
+                        .form-group {
+                            max-width:345px;
+                            width:30%;
+                            @media (max-width: $breakpoint-mobile) { width:100%; max-width:initial; }
+                            input {
+                                background-color:#efefef;
+                                border-radius:22px;
+                                height:45px;
+                                border:0;
+                                outline:0;
+                                color: #272727;
+                                font-size:13px;
+                                line-height:35px;
+                                text-transform:uppercase;
+                                padding:0 30px;
+                                margin-bottom:20px;
+                                &::-webkit-input-placeholder {
+                                  color: #D1D1D1;
+                                }
+                                &::-moz-placeholder {
+                                  color: #D1D1D1;
+                                }
+                                &:-ms-input-placeholder {
+                                  color: #D1D1D1;
+                                }
+                                &:-moz-placeholder {
+                                  color: #D1D1D1;
+                                }
+                                &:focus {
+                                    outline:none;
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+                        .form-group.form-group-textarea {
+                            max-width:580px;                            
+                            @media (max-width: $breakpoint-mobile) { width:100%; max-width:initial; }
+                            @media (min-width: $breakpoint-tablet) { width:65%; }
+                            @media (min-width: $breakpoint-largelaptop) { width:68%; } 
+                            textarea {
+                                background-color:#efefef;
+                                border-radius:22px;
+                                height:45px;
+                                border:0;
+                                outline:0;
+                                color: #272727;
+                                font-size:13px;
+                                line-height:35px;
+                                text-transform:uppercase;
+                                padding:0 30px;
+                                margin-bottom:20px;
+                                height:180px;
+                            }
+                            .send-btn {
+                                display: inline-block;
+                                width: 180px;
+                                line-height: 42px;
+                                border-radius: 28px;
+                                border: 2px solid $secondary-color;
+                                background-color:$secondary-color;
+                                text-align: center;
+                                color: $primary-bgcolor;
+                                font-size:$defaultFontsize + 1px;
+                                text-transform: capitalize;
+                                font-weight: 500;
+                                transition: all ease 0.3s;
+                                -webkit-transition: all ease 0.3s;
+                                -moz-transition: all ease 0.3s;
+                                -ms-transition: all ease 0.3s;
+                                appearance:none;
+                                -webkit-appearance:none;
+                                padding:0;
+                                margin:0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* visit us ends here ---------------- */
+
